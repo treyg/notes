@@ -18,7 +18,7 @@ document.querySelector('#create-note').addEventListener('click', function (e) {
         updatedAt: timestamp
     })
     saveNotes(notes)
-    location.assign(`/notes-app/edit.html#${id}`)
+    location.assign(`/edit.html#${id}`)
 })
 
 

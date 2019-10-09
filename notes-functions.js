@@ -48,7 +48,7 @@ const generateNoteDOM = function(note) {
         textEl.textContent = 'Unnamed note'
     }
 
-    textEl.setAttribute('href', `/notes-app/edit.html#${note.id}`)
+    textEl.setAttribute('href', `/edit.html#${note.id}`)
 
     noteEl.appendChild(textEl)
 
