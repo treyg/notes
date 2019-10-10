@@ -31,6 +31,7 @@ const generateNoteDOM = function(note) {
     const noteEl = document.createElement('div')
     const textEl = document.createElement('a')
     const button = document.createElement('button')
+    
 
     //Set up the remove note button
     button.textContent = 'x'
@@ -113,3 +114,4 @@ const renderNotes = function (notes, filters) {
 const generateLastEdited = function (timestamp) {
     return `Last edited ${moment(note.updatedAt).fromNow()}`
 }
+
