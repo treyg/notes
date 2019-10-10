@@ -2,22 +2,31 @@
 
 <html>
     <head>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Notes App</h1>
-        <h2>Take notes and never forget</h2>
-        <input id="search-text" type="text" placeholder="Filter Notes">
-        <select id="filter-by">
-            <option value="byEdited">Sort by last edited</option>
-            <option value="byCreated">Sort by recently created</option>
-            <option value="alphabetical">Sort alphabetically</option>
-        </select>
-        <div id="notes">
-        </div>
-        <button class="waves-effect waves-light btn" id="create-note">Create Note</button>
-    
+        <section class="section has-background-grey-darker">
+            <div class="container">
+                <h1 class="has-text-light has-text-centered is-size-1">Notes App</h1>
+                <h2 class="has-text-light has-text-centered is-size-3">Take notes and never forget</h2>
+                <div class="field is-horizontal has-text-centered">
+                    <input style="width:15em;"class="input" id="search-text" type="text" placeholder="Filter Notes">
+                        <div class="select">
+                            <select class="select" id="filter-by">
+                                <option value="byEdited">Sort by last edited</option>
+                                <option value="byCreated">Sort by recently created</option>
+                                <option value="alphabetical">Sort alphabetically</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="has-text-centered"id="notes">
+                </div>
+                <div class= "has-text-centered">
+                    <button class="button is-primary" id="create-note">Create Note</button>
+                </div>
+            </div>
+        </section>
     <script src="notes-uuid.js"></script>          
     <script src="notes-functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
