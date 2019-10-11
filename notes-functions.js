@@ -107,3 +107,11 @@ const getSavedNotes =  () => {
     
     //Generate last edited message 
     const generateLastEdited = ((timestamp) => `Last edited ${moment(note.updatedAt).fromNow()}`)
+
+
+
+//Materialize select option
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });

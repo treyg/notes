@@ -2,31 +2,42 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <section class="section has-background-grey-darker">
-            <div class="container">
-                <h1 class="has-text-light has-text-centered is-size-1">Notes App</h1>
-                <h2 class="has-text-light has-text-centered is-size-3">Take notes and never forget</h2>
-                <div class="field is-horizontal has-text-centered">
-                    <input style="width:15em;"class="input" id="search-text" type="text" placeholder="Filter Notes">
-                        <div class="select">
-                            <select class="select" id="filter-by">
-                                <option value="byEdited">Sort by last edited</option>
-                                <option value="byCreated">Sort by recently created</option>
-                                <option value="alphabetical">Sort alphabetically</option>
-                            </select>
-                        </div>
+            <div class="container ">
+                <div class="row">
+                    <div class="col s12">
+                        <h1 class="center-align white-text">Notes App</h1>
+                        <h2 class="center-align white-text">Take notes and never forget</h2>
+                    </div>
+                    <div class="input-field col s6">
+                        <input class="input" id="search-text" type="text" placeholder="Filter Notes">
+                    </div>
+                            <div class="select col s6">
+                                <select id="filter-by">
+                                    <option value="byEdited">Sort by last edited</option>
+                                    <option value="byCreated">Sort by recently created</option>
+                                    <option value="alphabetical">Sort alphabetically</option>
+                                </select>
+                            </div>
                 </div>
-                <div class="has-text-centered"id="notes">
+                <div class="row">
+                    <div class="col s6"id="notes">
+                        
+                    </div>
                 </div>
-                <div class= "has-text-centered">
-                    <button class="button is-primary" id="create-note">Create Note</button>
+               
+                <div class="">
+                    <button class="waves-effect waves-light btn" id="create-note">Create Note</button>
                 </div>
             </div>
-        </section>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="notes-uuid.js"></script>          
     <script src="notes-functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
