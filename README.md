@@ -1,2 +1,2 @@
 # Notes
-Notes app created with javascript. Currently using water.css for styling
+Notes app created with javascript. Currently using Bulma for styling
