@@ -2,35 +2,39 @@
 
 <html>
     <head>
+        <link rel="stylesheet" href="node_modules\bulma\css\bulma.css">
         <link rel="stylesheet" href="style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         
     </head>
     <body>
-            <div class="">
-                <div class="">
-                    <div class=" ">
-                        <h1 class="">Notes App</h1>
-                        <h2 class="t">Take notes and never forget</h2>
+            <div class="section">
+                <div class="container">
+                        <h1 class="title is-1">Notes App</h1>
+                        <h2 class="subtitle is-3">Take notes and never forget</h2>
+                    <div class="columns">
+                        <div class="column">
+                            <input class="input" id="search-text" type="text" placeholder="Filter Notes">
+                        </div>
+                        <div class="column">
+                                <div class="select">
+                                    <select id="">
+                                        <option value="byEdited">Sort by last edited</option>
+                                        <option value="byCreated">Sort by recently created</option>
+                                        <option value="alphabetical">Sort alphabetically</option>
+                                    </select>
+                                </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <input class="input" id="search-text" type="text" placeholder="Filter Notes">
-                    </div>
-                            <div class="">
-                                <select id="">
-                                    <option value="byEdited">Sort by last edited</option>
-                                    <option value="byCreated">Sort by recently created</option>
-                                    <option value="alphabetical">Sort alphabetically</option>
-                                </select>
-                            </div>
                 </div>
-                <div class="">
+                <div class="container">
                     <div class="col s6"id="notes">
                         
                     </div>
                 </div>
                
-                <div class="">
-                    <button class="" id="create-note">Create Note</button>
+                <div class="container">
+                    <button class="button is-primary" id="create-note">Create Note</button>
                 </div>
             </div>
 
