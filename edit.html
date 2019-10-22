@@ -8,16 +8,16 @@
 </head>
 <body>
     <section class="headers">
-        <h2>Edit Note</h2>
+        <h2 class="gradient-text">Edit Note</h2>
     </section>
     <div class="title-box">
         <input id="note-title" placeholder="Note title">
         <span id="last-edited"></span>
     </div>
     <div class="note-description-box">
-        <textarea id="note-body" placeholder="Enter note text"></textarea>
+        <textarea id="note-body" placeholder="Enter note description" maxlength="300"></textarea>
     </div>
-    <button class="save-button">Save Note</button>
+    <a href="/index.html"><button class="save-button">Save Note</button></a>
     <button class="remove-button" id="remove-note">Remove note</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
     <script src="notes-functions.js"></script>

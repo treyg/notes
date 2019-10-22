@@ -29,6 +29,13 @@ h2 {
     color: #ffffff;
 }
 
+.gradient-text {
+    background: linear-gradient(to right, #F27A54 0%,#A154F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
 .filter-sort-section {
     padding: 1rem; 
     margin: 1rem;
@@ -153,10 +160,13 @@ span {
 }
 
 textarea {
-    width: 275px;
-    height: 143px;
+    width: 320px;
+    height: 243px;
+    max-width: 100%;
     background: #FFFFFF;
     border-radius: 3px;
+    padding: 1rem;
+box-sizing: border-box;
 }
 
 .save-button {
