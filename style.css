@@ -161,7 +161,7 @@ span {
 textarea {
     width: 320px;
     height: 143px;
-    max-width: 100%;
+    max-width: 90%;
     background: #FFFFFF;
     border-radius: 3px;
     padding: 1rem;
