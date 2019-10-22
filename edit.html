@@ -4,12 +4,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <input id="note-title" placeholder="Note title">
-    <span id="last-edited"></span>
-    <textarea id="note-body" placeholder="Enter note text"></textarea>
-    <button id="remove-note">Remove note</button>
+    <section class="headers">
+        <h2>Edit Note</h2>
+    </section>
+    <div class="title-box">
+        <input id="note-title" placeholder="Note title">
+        <span id="last-edited"></span>
+    </div>
+    <div class="note-description-box">
+        <textarea id="note-body" placeholder="Enter note text"></textarea>
+    </div>
+    <button class="save-button">Save Note</button>
+    <button class="remove-button" id="remove-note">Remove note</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
     <script src="notes-functions.js"></script>
     <script src="notes-edit.js"></script>
