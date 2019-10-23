@@ -3,11 +3,11 @@ const cacheName = 'v1';
 const cacheAssets = [
   'index.html',
   'edit.html',
-  '/style.css',
-  '/notes-app.js',
-  '/notes-edit.js',
-  '/notes-functions.js',
-  '/notes-uuid.js',
+  'style.css',
+  'notes-app.js',
+  'notes-edit.js',
+  'notes-functions.js',
+  'notes-uuid.js',
 ];
 
 // Call Install Event
